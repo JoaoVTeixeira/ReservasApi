@@ -3,10 +3,10 @@ module.exports = function (app){
     const ReservasController = {
 
         listar: function (req,res){
-            const collection = app.collection;
-
+            const collection = require('../db');
+            
             (async ()=>{
-                const reservas = collection.find().toArray();
+                const reservas = collection.find
             })();
 
             
